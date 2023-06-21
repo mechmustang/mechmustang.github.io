@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f8ff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    padding: 50px;
+}
+
+.section {
+    display: flex;
+    gap: 50px;
+    margin: 100px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #444444;
+}
+
+.images {
+    display: flex;
+}
+
+.large-section {
+    width: 100vw;
+    height: auto;
+    background-color: #08224aff;
+    margin: 0;
+    padding: 0;
+}
+
+.image-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -50px;
+    padding: 0;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+
+    display: flex;
+}
+
+.image2 {
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+
+    display: flex;
+}
+
+.text {
+    font-size: 25px;
+}
+
+button {
+    font-size: 15px;
+
+}
+
+.text1 {
+    flex: 1;
+}
+ 
+.text2 {
+    flex: 2;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+[id] {
+    scroll-margin-top: 150px;
+}
+
+.footer {
+    width: 100vw;
+    height: 30px;
+    background-color: #08224aff;
+    color: #f8f8f8;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    html > * {
+      display: none;
+    }
+    html:before {
+      content: "This website is not optimized for mobile devices. Please view on a desktop or laptop computer.";
+      display: block;
+      padding: 1em;
+      background-color: #f2f2f2;
+      color: #333;
+      font-size: 1.2em;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media (min-width: 1450px) {
+    text {
+        font-size: 40px;
+    }
+}

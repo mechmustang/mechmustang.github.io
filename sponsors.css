@@ -1,0 +1,60 @@
+body {
+
+    background-color: #f8f8ff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 50px;
+    color: #000;
+    align-self: center;
+}
+
+img {
+    width: 30vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
+    width: 100vw;
+    height: 30px;
+    background-color: #08224aff;
+    color: #f8f8f8;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    html > * {
+      display: none;
+    }
+    html:before {
+      content: "This website is not optimized for mobile devices. Please view on a desktop or laptop computer.";
+      display: block;
+      padding: 1em;
+      background-color: #f2f2f2;
+      color: #333;
+      font-size: 1.2em;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+}
